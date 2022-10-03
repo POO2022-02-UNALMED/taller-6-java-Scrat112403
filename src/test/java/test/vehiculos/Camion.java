@@ -7,17 +7,20 @@ public class Camion extends Vehiculo {
     public Camion() {}
 
     public Camion(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, int ejes) {
-        super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
-        this.ejes= ejes;
-    }
-
-    public Camion crearCamion(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, int ejes) {
-		Camion camion = new Camion(placa, 2, 80, nombre, precio, peso, "4X2", fabricante, ejes);
+        super();
+		this.placa = placa;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.fabricante = fabricante;
+		this.ejes = ejes;
+		puertas = 2;
+		velocidadMaxima = 80;
+		traccion = "4X2";
 		cantidadCamiones++;
-        fabricante.cantidadVehiculos++;
-        fabricante.pais.cantidadVehiculos++;
-        return camion;
+		fabricante.cantidadVehiculos++;
+		fabricante.pais.cantidadVehiculos++;
 	}
+
 
     public void setEjes(int ejes) {
 		this.ejes = ejes;

@@ -7,23 +7,24 @@ public class Camioneta extends Vehiculo {
     public Camioneta() {}
 
     public Camioneta(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, boolean volco) {
-        super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
-        this.volco= volco;
-    }
-
-    public Camioneta crearCamioneta(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, boolean volco) {
-		Camioneta camioneta = new Camioneta(placa, puertas, 90, nombre, precio, peso, "4X4", fabricante, volco);
+        super();
+		this.placa = placa;
+		this.puertas = puertas;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.fabricante = fabricante;
+		this.volco = volco;
+		velocidadMaxima = 90;
+		traccion = "4X4";
 		cantidadCamionetas++;
-        fabricante.cantidadVehiculos++;
-        fabricante.pais.cantidadVehiculos++;
-        return camioneta;
-	}
+		fabricante.cantidadVehiculos++;
+		fabricante.pais.cantidadVehiculos++;
 
     public void setVolco(boolean volco) {
 		this.volco = volco;
 	}
 
-    public boolean getVolco() {
+    public boolean isVolco() {
 		return volco;
 	}
 }

@@ -7,16 +7,18 @@ public class Automovil extends Vehiculo {
     public Automovil() {}
 
     public Automovil(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, int puestos) {
-        super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
-        this.puestos= puestos;
-    }
-
-    public Automovil crearAuto(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, int puestos) {
-		Automovil auto = new Automovil(placa, 4, 100, nombre, precio, peso, "FWD", fabricante, puestos);
+        super();
+		this.placa = placa;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.fabricante = fabricante;
+		this.puestos = puestos;
+		puertas = 4;
+		velocidadMaxima = 100;
+		traccion = "FWD";
 		cantidadAutomoviles++;
-        fabricante.cantidadVehiculos++;
-        fabricante.pais.cantidadVehiculos++;
-        return auto;
+		fabricante.cantidadVehiculos++;
+		fabricante.pais.cantidadVehiculos++;
 	}
 
     public void setPuestos(int puestos) {
