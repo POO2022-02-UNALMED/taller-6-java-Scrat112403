@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Pais {
     public String nombre;
     public int cantidadVehiculos;
-    private ArrayList<Pais> pais = new ArrayList<Pais>();
+    private ArrayList<Pais> paises = new ArrayList<Pais>();
 
     public Pais() {}
 
@@ -24,13 +24,13 @@ public class Pais {
 
     public static Pais paisMasVendedor() {
         Pais pais = new Pais();
-        Pais a = pais;
-        for (Pais pais: pais) {
+        Pais p = pais;
+        for (Pais pais: paises) {
             if (pais.cantidadVehiculos > a.cantidadVehiculos) {
-                a= pais;
+                p= pais;
             }
         }
 
-        return a;
+        return p;
     }
 }
