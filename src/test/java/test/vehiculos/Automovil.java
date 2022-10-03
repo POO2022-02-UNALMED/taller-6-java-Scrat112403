@@ -11,7 +11,7 @@ public class Automovil extends Vehiculo {
         this.puestos= puestos;
     }
 
-    public Automovil crearAuto(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante) {
+    public Automovil crearAuto(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, int puestos) {
 		Automovil auto = new Automovil(placa, 4, 100, nombre, precio, peso, "FWD", fabricante, puestos);
 		cantidadAutomoviles++;
         fabricante.cantidadVehiculos++;

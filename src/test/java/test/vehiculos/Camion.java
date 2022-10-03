@@ -11,7 +11,7 @@ public class Camion extends Vehiculo {
         this.ejes= ejes;
     }
 
-    public Camion crearCamion(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante) {
+    public Camion crearCamion(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, int ejes) {
 		Camion camion = new Camion(placa, 2, 80, nombre, precio, peso, "4X2", fabricante, ejes);
 		cantidadCamiones++;
         fabricante.cantidadVehiculos++;

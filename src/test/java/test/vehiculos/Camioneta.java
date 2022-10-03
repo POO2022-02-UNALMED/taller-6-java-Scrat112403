@@ -11,7 +11,7 @@ public class Camioneta extends Vehiculo {
         this.volco= volco;
     }
 
-    public Camioneta crearCamioneta(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante) {
+    public Camioneta crearCamioneta(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, boolean volco) {
 		Camioneta camioneta = new Camioneta(placa, puertas, 90, nombre, precio, peso, "4X4", fabricante, volco);
 		cantidadCamionetas++;
         fabricante.cantidadVehiculos++;
@@ -23,7 +23,7 @@ public class Camioneta extends Vehiculo {
 		this.volco = volco;
 	}
 
-    public int getVolco() {
+    public boolean getVolco() {
 		return volco;
 	}
 }
