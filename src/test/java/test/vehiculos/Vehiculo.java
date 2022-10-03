@@ -27,67 +27,67 @@ public class Vehiculo {
 		cantidadVehiculos++;
 	}
 
-    public static void setPlaca(String placa) {
+    public void setPlaca(String placa) {
       this.placa = placa;
 	}
 
-    public static String getPlaca() {
+    public String getPlaca() {
       return placa;
 	}
 
-    public static void setPuertas(int puertas) {
+    public void setPuertas(int puertas) {
       this.puertas = puertas;
 	}
 
-    public static int getPuertas() {
+    public int getPuertas() {
       return puertas;
 	}
 
-    public static void setVelocidadMaxima(int velocidad) {
+    public void setVelocidadMaxima(int velocidad) {
       this.velocidadMaxima = velocidad;
 	}
 
-    public static int getVelocidadMaxima() {
+    public int getVelocidadMaxima() {
       return velocidad;
 	}
 
-    public static void setNombre(String nombre) {
+    public void setNombre(String nombre) {
       this.nombre = nombre;
 	}
 
-    public static String getNombre() {
+    public String getNombre() {
       return nombre;
 	}
 
-    public static void setPrecio(int precio) {
+    public void setPrecio(int precio) {
       this.precio = precio;
 	}
 
-    public static int getPrecio() {
+    public int getPrecio() {
       return precio;
 	}
 
-    public static void setPeso(int peso) {
+    public void setPeso(int peso) {
       this.peso = peso;
 	}
 
-    public static int getPeso() {
+    public int getPeso() {
       return peso;
 	}
 
-    public static void setTraccion(String traccion) {
+    public void setTraccion(String traccion) {
       this.traccion = traccion;
 	}
 
-    public static String getTraccion() {
+    public String getTraccion() {
       return traccion;
 	}
 
-    public static void setFabricante(Fabricante fabricante) {
+    public void setFabricante(Fabricante fabricante) {
       this.fabricante = fabricante;
 	}
 
-    public static Fabricante getFabricante() {
+    public Fabricante getFabricante() {
       return fabricante;
 	}
 

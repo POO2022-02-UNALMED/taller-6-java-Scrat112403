@@ -19,11 +19,11 @@ public class Camioneta extends Vehiculo {
         return camioneta;
 	}
 
-    public static void setVolco(boolean volco) {
+    public void setVolco(boolean volco) {
 		this.volco = volco;
 	}
 
-    public static int getVolco() {
+    public int getVolco() {
 		return volco;
 	}
 }

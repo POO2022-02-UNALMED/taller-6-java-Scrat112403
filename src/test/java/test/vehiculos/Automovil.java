@@ -19,11 +19,11 @@ public class Automovil extends Vehiculo {
         return auto;
 	}
 
-    public static void setPuestos(int puestos) {
+    public void setPuestos(int puestos) {
 		this.puestos = puestos;
 	}
 
-    public static int getPuestos() {
+    public int getPuestos() {
 		return puestos;
 	}
 }
