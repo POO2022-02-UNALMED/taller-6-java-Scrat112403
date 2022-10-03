@@ -1,6 +1,5 @@
 package vehiculos;
 
-import java.util.ArrayList;
 
 public class Vehiculo {
     protected String placa;
@@ -14,14 +13,14 @@ public class Vehiculo {
     private static int cantidadVehiculos;
 
     public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
-        this.placa= placa;
-        this.puertas= puertas;
-        this.velocidadMaxima= velocidadMaxima;
-        this.nombre= nombre;
-        this.precio= precio;
-        this.peso= peso;
-        this.traccion= traccion;
-        this.fabricante= fabricante;
+      this.placa= placa;
+      this.puertas= puertas;
+      this.velocidadMaxima= velocidadMaxima;
+      this.nombre= nombre;
+      this.precio= precio;
+      this.peso= peso;
+      this.traccion= traccion;
+      this.fabricante= fabricante;
     }
 
     public Vehiculo() {
@@ -29,75 +28,75 @@ public class Vehiculo {
 	}
 
     public static void setPlaca(String placa) {
-		this.placa = placa;
+      this.placa = placa;
 	}
 
     public static String getPlaca() {
-		return placa;
+      return placa;
 	}
 
     public static void setPuertas(int puertas) {
-		this.puertas = puertas;
+      this.puertas = puertas;
 	}
 
     public static int getPuertas() {
-		return puertas;
+      return puertas;
 	}
 
     public static void setVelocidadMaxima(int velocidad) {
-		this.velocidadMaxima = velocidad;
+      this.velocidadMaxima = velocidad;
 	}
 
     public static int getVelocidadMaxima() {
-		return velocidad;
+      return velocidad;
 	}
 
     public static void setNombre(String nombre) {
-		this.nombre = nombre;
+      this.nombre = nombre;
 	}
 
     public static String getNombre() {
-		return nombre;
+      return nombre;
 	}
 
     public static void setPrecio(int precio) {
-		this.precio = precio;
+      this.precio = precio;
 	}
 
     public static int getPrecio() {
-		return precio;
+      return precio;
 	}
 
     public static void setPeso(int peso) {
-		this.peso = peso;
+      this.peso = peso;
 	}
 
     public static int getPeso() {
-		return peso;
+      return peso;
 	}
 
     public static void setTraccion(String traccion) {
-		this.traccion = traccion;
+      this.traccion = traccion;
 	}
 
     public static String getTraccion() {
-		return traccion;
+      return traccion;
 	}
 
     public static void setFabricante(Fabricante fabricante) {
-		this.fabricante = fabricante;
+      this.fabricante = fabricante;
 	}
 
     public static Fabricante getFabricante() {
-		return fabricante;
+      return fabricante;
 	}
 
     public static void setCantidadVehiculos(int cantidadVehiculos) {
-		Vehiculo.cantidadVehiculos = cantidadVehiculos;
+      Vehiculo.cantidadVehiculos = cantidadVehiculos;
 	}
 
     public static int getCantidadVehiculos() {
-		return cantidadVehiculos;
+      return cantidadVehiculos;
 	}
 
 	public String vehiculosPorTipo() {
