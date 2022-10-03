@@ -28,11 +28,11 @@ public class Fabricante {
         this.pais= pais;
     }
 
-    public String getPais(){
+    public Pais getPais(){
         return pais;
     }
 
-    public static Fabricante fabricaMayorVentas() {
+    public Fabricante fabricaMayorVentas() {
         Fabricante fab = new Fabricante();
         Fabricante f = fab;
         for (Fabricante fabrica: fabricas) {
