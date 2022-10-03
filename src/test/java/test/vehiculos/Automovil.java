@@ -4,7 +4,7 @@ public class Automovil extends Vehiculo {
     private int puestos;
     public static int cantidadAutomoviles;
 
-    public Automovil(){}
+    public Automovil() {}
 
     public Automovil(String placa, int puertas, int velocidadMaxima, String nombre, float precio, float peso, String traccion, Fabricante fabricante, int puestos) {
         super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);

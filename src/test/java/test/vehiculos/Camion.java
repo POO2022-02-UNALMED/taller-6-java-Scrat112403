@@ -4,7 +4,7 @@ public class Camion extends Vehiculo {
     private int ejes;
     public static int cantidadCamiones;
 
-    public Camion(){}
+    public Camion() {}
 
     public Camion(String placa, int puertas, int velocidadMaxima, String nombre, float precio, float peso, String traccion, Fabricante fabricante, int ejes) {
         super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
