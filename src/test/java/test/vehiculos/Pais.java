@@ -22,7 +22,7 @@ public class Pais {
         return nombre;
     }
 
-    public static Pais paisMasVendedor() {
+    public Pais paisMasVendedor() {
         Pais pais = new Pais();
         Pais p = pais;
         for (Pais pais: paises) {
