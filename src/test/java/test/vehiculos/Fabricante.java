@@ -16,19 +16,19 @@ public class Fabricante {
         fabricas.add(this);
     }
 
-    public String setNombre(String nombre) {
+    public static void setNombre(String nombre) {
         this.nombre= nombre;
     }
 
-    public getNombre(){
+    public static String getNombre(){
         return nombre;
     }
 
-    public String setPais(Pais pais) {
+    public static void setPais(Pais pais) {
         this.pais= pais;
     }
 
-    public getPais(){
+    public static String getPais(){
         return pais;
     }
 

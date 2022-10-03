@@ -14,11 +14,11 @@ public class Pais {
         pais.add(this);
     }
 
-    public String setNombre(String nombre) {
+    public static void setNombre(String nombre) {
         this.nombre= nombre;
     }
 
-    public getNombre(){
+    public static String getNombre(){
         return nombre;
     }
 
