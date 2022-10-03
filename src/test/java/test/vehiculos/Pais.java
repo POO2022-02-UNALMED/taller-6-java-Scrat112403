@@ -1,9 +1,9 @@
 package vehiculos;
 
-import java.util.ArrayList:
+import java.util.ArrayList;
 
 public class Pais {
-    String nombre;
+    public String nombre;
     public int cantidadVehiculos;
     private ArrayList<Pais> pais = new ArrayList<Pais>();
 
