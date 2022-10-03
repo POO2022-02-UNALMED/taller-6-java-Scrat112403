@@ -26,7 +26,7 @@ public class Pais {
         Pais country = new Pais();
         Pais p = country;
         for (Pais pais: paises) {
-            if (pais.cantidadVehiculos > a.cantidadVehiculos) {
+            if (pais.cantidadVehiculos > p.cantidadVehiculos) {
                 p= pais;
             }
         }
