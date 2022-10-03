@@ -1,13 +1,14 @@
 package vehiculos;
 
 public class Automovil extends Vehiculo {
-    public int puestos;
-    public static int cantidadAutomoviles;
-
-    public Automovil() {}
-
-    public Automovil(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante, int puestos) {
-        super();
+	private int puestos;
+	public static int cantidadAutomoviles;
+	
+	public Automovil() {}
+	
+	public Automovil (String placa, String nombre, int precio, 
+			int peso, Fabricante fabricante, int puestos) {
+		super();
 		this.placa = placa;
 		this.nombre = nombre;
 		this.precio = precio;
@@ -21,11 +22,14 @@ public class Automovil extends Vehiculo {
 		fabricante.pais.cantidadVehiculos++;
 	}
 
-    public void setPuestos(int puestos) {
-		this.puestos = puestos;
-	}
-
-    public int getPuestos() {
+	public int getPuestos() {
 		return puestos;
 	}
+
+	public void setPuestos(int puestos) {
+		this.puestos = puestos;
+	}
+	
+	
+
 }
