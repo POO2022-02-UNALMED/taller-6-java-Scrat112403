@@ -6,7 +6,7 @@ public class Camion extends Vehiculo {
 
     public Camion() {}
 
-    public Camion(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante, int ejes) {
+    public Camion(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante, int ejes) {
         super();
 		this.placa = placa;
 		this.nombre = nombre;
