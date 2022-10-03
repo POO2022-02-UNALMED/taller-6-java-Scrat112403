@@ -20,11 +20,14 @@ public class Camioneta extends Vehiculo {
 		fabricante.cantidadVehiculos++;
 		fabricante.pais.cantidadVehiculos++;
 
-    public boolean isVolco() {
-		return volco;
-	}
+    }
 
-    public void setVolco(boolean volco) {
-		this.volco = volco;
-	}
+        public boolean isVolco() {
+            return volco;
+        }
+        public void setVolco(boolean volco) {
+            this.volco = volco;
+        }
+    
 }
+    
