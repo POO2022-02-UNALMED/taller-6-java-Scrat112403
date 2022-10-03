@@ -1,7 +1,7 @@
 package vehiculos;
 
 public class Automovil extends Vehiculo {
-    protected int puestos;
+    public int puestos;
     public static int cantidadAutomoviles;
 
     public Automovil() {}
@@ -11,7 +11,7 @@ public class Automovil extends Vehiculo {
         this.puestos= puestos;
     }
 
-    public static Automovil crearAuto(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante) {
+    public Automovil crearAuto(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante) {
 		Automovil auto = new Automovil(placa, 4, 100, nombre, precio, peso, "FWD", fabricante, puestos);
 		cantidadAutomoviles++;
         fabricante.cantidadVehiculos++;
