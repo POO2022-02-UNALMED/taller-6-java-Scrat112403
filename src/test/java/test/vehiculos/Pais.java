@@ -23,8 +23,8 @@ public class Pais {
     }
 
     public Pais paisMasVendedor() {
-        Pais pais = new Pais();
-        Pais p = pais;
+        Pais country = new Pais();
+        Pais p = country;
         for (Pais pais: paises) {
             if (pais.cantidadVehiculos > a.cantidadVehiculos) {
                 p= pais;
