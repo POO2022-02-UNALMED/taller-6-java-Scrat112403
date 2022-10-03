@@ -6,13 +6,13 @@ public class Vehiculo {
     protected int puertas;
     protected int velocidadMaxima;
     protected String nombre;
-    protected int precio;
+    protected float precio;
     protected int peso;
     protected String traccion;
     protected Fabricante fabricante;
     private static int cantidadVehiculos;
 
-    public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
+    public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, float precio, int peso, String traccion, Fabricante fabricante) {
       this.placa= placa;
       this.puertas= puertas;
       this.velocidadMaxima= velocidadMaxima;
@@ -59,11 +59,11 @@ public class Vehiculo {
       return nombre;
 	}
 
-    public void setPrecio(int precio) {
+    public void setPrecio(float precio) {
       this.precio = precio;
 	}
 
-    public int getPrecio() {
+    public float getPrecio() {
       return precio;
 	}
 
